@@ -1,0 +1,44 @@
+label{
+    border: 1px solid rgba(206, 151, 151, 0.8);
+    border-radius: 30px;
+    padding: 0 0 0 2rem;
+    display: inline-flex;
+    align-items: center;
+    height: 3.6rem;    
+}
+input{
+    height: 2rem;
+    width: 20rem;
+    margin-right: 1rem;
+    font-family: var(--josefin-sans);
+    font-size: var(--paragraph);
+    color: var(--desaturated-red);
+    font-weight: 400;
+    background: none;
+}
+::placeholder{
+    font-family: var(--josefin-sans);
+    font-size: 18px;
+    color: var(--desaturated-red);
+    font-weight: 300;
+}
+
+input:focus{
+    outline: none;
+}
+.botao-enviar-email{
+    height: 100%;
+    width: 7rem;
+    padding: 1rem;
+    margin-left: 1.5rem;
+    background-image: var(--gradient-red);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border-radius: 30px;
+    transition: all 200ms ease-in-out;
+}
+.botao-enviar-email:hover{
+    opacity: 0.8;
+    box-shadow: 0 12px 11px 0 var(--desaturated-red);
+}

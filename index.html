@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <meta name="description" content="Página que simula um cadastro de email">
+    <link rel="stylesheet" href="./assets/css/pages/index/style.css">
+    <script type="text/javascript" src="./assets/js/pages/index/script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <section id="apresentacao">
+            <img src="./assets/images/logo.svg" alt="Logo">
+            <h1>
+                <span>WE'RE</span><br>COMING<br>
+                SOON
+            </h1>
+            <p>Olá querido cliente! Atualmente estamos criando nossa nova loja de moda. Insira seu email no campo abaixo para ficar atualizado no anúncio e nossas ofertas de lançamento!</p>
+        </section>
+
+        <form onsubmit="return verificarEmail(email)" action="#" method="get" target="_blank">
+            <label id="label" for="email">
+                <input type="email" name="email" id="email" placeholder="Insira seu email aqui..." required maxlength="40" onchange="verificarEmail(email)">
+                <img hidden id="error-image" src="./assets/images/icon-error.svg" alt="Erro no formulario">
+                <button class="botao-enviar-email" onclick="submit"> <img src="./assets/images/icon-arrow.svg" alt="Enviar Formulario"></button>
+            </label>
+            <p hidden id="error-text">Insira um email válido</p>
+        </form>
+    </main>
+    <img src="./assets/images/hero-desktop.jpg" alt="Foto de uma mulher">
+</body>
+
+</html>

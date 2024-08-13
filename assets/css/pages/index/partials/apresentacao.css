@@ -1,0 +1,17 @@
+#apresentacao{
+    margin-top: 2vw;
+    width: 30rem;
+}
+#apresentacao img{
+    margin-top: 3vw;
+}
+#apresentacao h1{
+    margin-top: 6vw;
+    letter-spacing: 1rem;
+    font-size: 5rem;
+    font-weight: 600;
+    color: var(--dark-grayish-red);
+}
+#apresentacao p{
+    margin: 2.5vw 0;
+}
